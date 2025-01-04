@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "bagelengine",
+  "version": "${version}",
+  "name": "BagelEngine",
+  "description": "The engine, which runs Bagel. It has many, many functions.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bagelengine/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "sh.thered.bagelengine.BagelEngine"
+    ]
+  },
+  "mixins": [
+    "bagelengine.mixins.json",
+    {
+      "config": "bagelengine.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "fabric-permissions-api-v0": "*"
+  }
+}

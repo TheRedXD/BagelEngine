@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "sh.thered.bagelengine.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CommandManagerMixin",
+    "MinecraftServerMixin",
+    "PlayerEntityMixin",
+    "PlayerManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
